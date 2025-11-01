@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: triple-draw-27
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 app_27triple.py
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+
